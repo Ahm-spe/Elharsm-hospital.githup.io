@@ -1,0 +1,62 @@
+<html>
+<head>
+ <pre><h1>                                        Appointment    </h1></pre>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+
+body{
+		
+        background:url("http://mindholding.net/mhm/wp-content/uploads/2019/10/misr-hospital.jpg")
+        no-repeat fixed center;
+		background-size:100%;
+		}
+div{
+padding-left: 300 :
+}
+</style>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<pre>
+  Name:
+  <input type="text" name="fname">
+  
+  Doctor :
+  <input type="text" name="fdoctor">
+   
+  DATE :
+  <input type="text" name="fdate">
+  
+  <fieldset>
+<legend style="font-size:160%;"  style="color:red;" > Gender </legend>
+
+<input type = "radio" id = "male" name = "gender"></input>
+<label for = "male" > male </label><br><br>
+
+<input type = "radio" id = "female" name = "gender"></input>
+<label for = "female" > female </label><br/><br/>
+</fieldset><br><br>
+
+  </pre>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<div>
+
+<img src="dr.jpg">
+<img src="drr.jpg">
+
+</div>
+</body>
+</html>
